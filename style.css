@@ -64,11 +64,19 @@ body{
     text-decoration: none;
     padding: 0px 5px 5px 5px;
     border: none;
-    background: #ff4400;
     color: #fff;
     font-size: 30px;
     font-weight: 200px;
     border-radius: 5px;
+    animation: 2s infinite alternate ease-out hireColor;
+}
+@keyframes hireColor{
+    from{
+        background: #ff4400;
+    }
+    to{
+        background: #ffa500;
+    }
 }
 .about-left a:hover{
     background: #00dd55;
@@ -88,14 +96,23 @@ body{
     width: 150px;
     height: 150px;
     position: relative;
-    background: #4c3fc9;
     left: 70%;
     top:-25%;
     border-radius: 50%;
+    background: linear-gradient(-45deg, #92e99e, #00dd55, #4c3fc9, #85e08c);
+	background-size: 500% 600%;
+	animation: gradient 10s ease infinite;
 }
-.circle:hover{
-    background: #00dd55;
-    transition: .5s;
+@keyframes gradient{
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 .project-sector h1{
     color: #ffa500;
@@ -136,9 +153,21 @@ body{
 }
 .footer-body{
     background: #d9d9d9;
-    padding-bottom: 5%;
+    background: linear-gradient(-45deg, #ee7752, #a646e0, #23d549, #23d5ab);
+	background-size: 400% 400%;
+	animation: footer 15s ease-out infinite;
 }
-
+@keyframes footer{
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 .footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -151,7 +180,7 @@ body{
 }
 .footer a{
     text-decoration: none;
-    color: rgb(80, 80, 80);
+    color: rgb(0, 0, 0);
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
