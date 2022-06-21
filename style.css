@@ -152,7 +152,6 @@ body{
     border-radius: 10px 10px 0px 0px;
 }
 .footer-body{
-    background: #d9d9d9;
     background: linear-gradient(-45deg, #ee7752, #a646e0, #23d549, #23d5ab);
 	background-size: 400% 400%;
 	animation: footer 15s ease-out infinite;
@@ -174,6 +173,7 @@ body{
     padding-top:5% ;
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: -10%;
 }
 .footer ul{
     list-style: none;
