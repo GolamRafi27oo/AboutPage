@@ -1,6 +1,6 @@
 *{
-    transition: .5s;
     color: #ffffff;
+    transition: 0.5s;
 }
 body{
     background: #010415;
@@ -82,12 +82,12 @@ body{
 }
 .about-right img{
     border-radius:50%;
-    height: 500px;
+    height: 400px;
     
 }
 .circle{
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     position: relative;
     left: 70%;
     top:-25%;
@@ -135,6 +135,9 @@ body{
     display: flex;
     border-radius: 10px;
 }
+.project h2{
+    padding-top: 15px;
+}
 .project img{
     width: 100%;
     border-radius: 10px;
@@ -150,15 +153,28 @@ body{
 .footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-top:5% ;
+    padding-top:5%;
     margin-left: 15%;
     margin-right: 15%;
-    margin-bottom: -10%;
-    padding-bottom: 20px;
-    
+    padding-bottom: 40px;
 }
 .footer ul{
     list-style: none;
+}
+.footer ul li{
+    background: #010415;
+    margin-top: 5px;
+    padding: 13px;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    transition: .3s;
+}
+.footer ul li:hover{
+    margin-left: -10px;
+    margin-right: -10px;
+    font-size: 18px;
+    transition: .5s;
 }
 .footer a{
     text-decoration: none;
@@ -168,7 +184,6 @@ body{
 }
 .footer a:hover{
     color: #1f57d3;
-    transition: .1s;
 }
 .footer i{
     color: #aaabb1;
@@ -201,6 +216,14 @@ body{
     .about-right img{
         border-radius: 50%;
         height: 300px;
+    }
+    .footer ul li{
+        font-size: 13px;
+        margin-left: -20px;
+    }
+    .footer ul li:hover{
+        margin-left: -30px;
+        font-size: 14px;
     }
     .circle{
         width: 100px;
